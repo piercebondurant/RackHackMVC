@@ -12,29 +12,25 @@ namespace RackHackMVC.Models
         public int[] arrayOfInteger9Ball { get; set; }
 
 
-        public int[] arrayOfInteger10Ball { get; set; }
+        public int[] arrayOfInteger10Ball { get; set; } = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 
 
 
         //list property
-        List
-
-
-
-
-
-
 
         //create constructor
-            public RackHackViewModel()
+        public RackHackViewModel(int numberOfBalls)
         {
+            if (numberOfBalls == 10)
+            {
+                //shuffle for 10 and assign to the array
+            }
+            //in constructor put links to ball images\
 
-        //in constructor put links to ball images\
 
 
-
-        @"C: \Users\crond\source\repos\RackHackMVC\RackHackMVC\Images\eleven_ball.jpg"
+            //@"C: \Users\crond\source\repos\RackHackMVC\RackHackMVC\Images\eleven_ball.jpg"
 
 
         }
@@ -82,11 +78,6 @@ namespace RackHackMVC.Models
          */
 
 
-        public RackHackViewModel()
-        {
-
-
-        }
 
 
         /*

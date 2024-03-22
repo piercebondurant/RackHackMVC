@@ -3,7 +3,7 @@
 *@
 
 
-@model RackHackMVC.ViewModels.RackHackViewModel
+@model RackHackMVC.Models.RackHackViewModel
 
 @{
     ViewData["Title"] = "Pool Ball Rack";
@@ -13,12 +13,11 @@
 <h1>Pool Ball Rack</h1>
 
 <div class="pool-ball-rack">
-    
-    @foreach (var ballNumber in Model.PoolBalls)
-    {
-        <img src="~/images/poolballs/poolball@ballNumber.png" alt="Pool Ball @ballNumber" />
-    }
 
+    @foreach (var ballNumber in Model.arrayOfInteger10Ball)
+    {
+        <img src="~/Images/@(ballNumber).jpg" alt="Pool Ball @ballNumber" />
+    }
 </div>
 
 
