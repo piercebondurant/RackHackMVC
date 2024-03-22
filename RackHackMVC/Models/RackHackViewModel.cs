@@ -12,7 +12,7 @@ namespace RackHackMVC.Models
         public int[] arrayOfInteger9Ball { get; set; }
 
 
-        public int[] arrayOfInteger10Ball { get; set; } = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        public int[] arrayOfInteger10Ball { get; set; } = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //hard coded, eventually remove. Proof of concept only
 
 
 
